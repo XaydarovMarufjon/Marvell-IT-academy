@@ -12,6 +12,15 @@ document.querySelector(".sendInfo").addEventListener("click", () => {
   modal.classList.toggle("modal_noActive");
   modal.classList.toggle("modal_Active");
 });
+let about_course=document.querySelector('.about_course');
+document.querySelector("#close__about_courses").addEventListener("click", () => {
+  about_course.classList.toggle("modal_noActive");
+  about_course.classList.toggle("modal_Active");
+});
+document.querySelector("#about_course_btn").addEventListener("click", () => {
+  about_course.classList.toggle("modal_noActive");
+  about_course.classList.toggle("modal_Active");
+ });
 
 let main_header_link = document.querySelectorAll(".main-header-link");
 function is_active(event) {

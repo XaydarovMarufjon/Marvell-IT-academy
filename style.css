@@ -68,12 +68,16 @@ body {
   margin-right: 15px;
 }
 .modals {
-  width: 600px;
-  height: 400px;
-  background-color: white;
-  padding: 50px;
+  width: 100%;
+  height:100%;
+ background:url('https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg');
+ background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+ padding: 150px;
   position: absolute;
-  top: 10px;
+  top: 0;
+  left: 0;
   text-align: center;
   z-index: 100;
   color: black;
@@ -105,6 +109,52 @@ body {
   height: 35px;
   margin-right: 10px;
   border-radius: 10px;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.about_course{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  /* transform: translateY(-1000px); */
+  top:0;
+  left: 0;
+  background:url('https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  z-index: 9;
+  transition: 0.5s;
+}
+.about_course h1{
+  z-index: 5;
+}
+.about_front{
+ text-align: center;
+  margin-top: 25px;  
+}
+
+.about_front h1{
+  color: red;
+  font-size: 55px;
+}
+
+.about_front ul{
+  list-style: none;
+}
+
+.about_front ul li{
+  margin: 10px 15px;
+  font-size: 25px;
+}
+
+#close__about_courses{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -878,8 +928,6 @@ body.light-mode .video-bg:before {
 }
 
 .app-card {
-  display: flex;
-  flex-direction: column;
   width: calc(33.3% - 20px);
   height: 350px;
   font-size: 16px;
